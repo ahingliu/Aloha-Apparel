@@ -1,0 +1,655 @@
+/* makes all images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+header {
+    font-family: Helvetica, sans-serif;
+}
+
+a:link {
+    color: #e2574c;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: #b64036;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #e2574c;
+    text-decoration: none;
+}
+
+/*Header part of the site - Cointaining Aloha Logo, Nav Menu and Cart Icon*/
+
+.container {
+    max-width: 1240px;
+    width: auto;
+    margin: 0 auto;
+}
+
+.site_header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.site_header img {
+    height: 60px;
+    padding: 0.4rem 0;
+}
+
+.aloha-logo {
+    flex: 1 0 50%;
+    order: 1;
+    text-align: left;   
+}
+
+.navmenu {
+    flex: 1 0 100%;
+    order: 3;
+}
+
+.navlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid #d7d7d7;
+}
+
+.li-nav {
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+.cart-icon {
+    text-align: right;
+    flex: 1 0 50%;
+    order: 2;
+}
+
+
+
+/* Banner Girl and Banner Background */
+
+.banner {
+    height: 450px;
+    width: auto;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url(images/banner-girl.png) no-repeat center 45px, url(images/flower-bkgd.jpg)repeat-x top;
+    background-size: cover, contain;
+    position: relative;
+    margin-top: 0.25rem;
+    margin-bottom: 55px;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    padding: 11rem;
+    line-height: 3rem;
+    font-family: "Raleway";
+}
+
+.first-line {
+    font-size: 1.25rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 3px 1px 2px #13131333;
+    font-family: 'Raleway';
+
+    font-weight: 400;
+}
+
+.season {
+    font-size: 4rem;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 3px 1px 2px #13131333;
+}
+
+/* About Section */
+
+.hc {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.about_text {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin: 69px auto;
+    width: 500px;
+}
+
+.styles {
+    margin-left: 0.75rem;
+}
+
+/* Typography */
+
+html,
+body {
+    font-size: 14px;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #2d2d2d;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    font-family: 'Playfair Display', Arial, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    margin: 1rem 0;
+    font-family: 'Playfair Display', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    font-style: italic;
+}
+
+h2 span {
+    font-weight: bold;
+    font-style: normal
+}
+
+.dc {
+    color: #e2574c;
+    font-size: 1.5rem;
+    margin: 16px;
+}
+
+.price {
+    color: #969696;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.type {
+    color: #969696;
+    text-transform: uppercase;
+    font-size: 0.80rem;
+}
+
+.footad {
+    color: #969696;
+}
+
+/* Aloha Apparel - mosaic categories display  */
+
+.categories {
+    text-transform: uppercase;
+    display: block;
+}
+
+.categories-mosaic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.categories-mosaic li {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+    font-family: 'Raleway';
+}
+
+.categories-mosaic li span a {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 2px 2px #0303030e;
+    border: 1px solid white;
+}
+
+/* Aloha Apparel - Merchandise carousel section */
+
+.merchandise-name {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.italic {
+    font-size: 2.5rem;
+    font-style: italic;
+}
+
+.bold {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.merchandise-text {
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.products {
+    font-weight: 600;
+}
+
+.mens {
+    background: url(./images/mens-category.jpg);
+    flex-basis: 100%;
+  
+}
+
+.trends {
+    background: url(./images/trends-category.jpg);
+    flex-basis: 50%;
+}
+
+.glasses {
+    background: url(./images/glasses-category.jpg);
+    flex-basis: 50%;
+}
+
+.sale {
+    background: url(./images/sale-category.jpg);
+    flex-basis: 50%;
+}
+
+.bags {
+    background: url(./images/bags-category.jpg);
+    flex-basis: 50%;
+}
+
+.womens {
+    background: url(./images/womens-category.jpg);
+    flex-basis: 100%;
+}
+
+/* Flickity image slider */
+
+.carousel-cell {
+    width: 100%;
+    height: 500px;
+}
+
+.flickity-page-dots {
+    bottom: 50px;
+}
+
+/*Subscription Section*/
+
+.subscription {
+    background: linear-gradient(180deg, rgba(0, 0, 0, .15) 0, rgba(0, 0, 0, .15)), url(./images/wave-bkgd.jpg) no-repeat bottom;
+    height: 350px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    max-width: 100%;
+    color: #fff;
+    justify-content: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.subscription-text {
+    width: 495px;
+}
+
+.subscription-heading {
+    padding: 1.8rem 0;
+}
+
+.email {
+    border-radius: 20%;
+}
+
+.updt {
+    margin: 9px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 3rem 0;
+}
+
+.field {
+    border-radius: 25px;
+    height: 50px;
+    max-width: 500px;
+    width: 400px;
+    padding: 1rem;
+    border: none;
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+.submit {
+    background-color: #e2574c;
+    height: 30px;
+    color: #fff;
+    font-weight: 700;
+    padding: 1rem;
+    position: absolute;
+    border-radius: 20px;
+    height: 40px;
+    right: 5px;
+    width: 115px;
+    border: none;
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+/*This is the footer  part of the site*/
+
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background: #242424;
+    background-size: cover;
+    height: 250px;
+}
+
+
+.footer_description {
+    line-height: 0.75rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.email_footer {
+    line-height: 1rem;
+    margin-right: 2px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.tel {
+    margin-right: 3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.info {
+    margin-left: 0px;
+}
+
+.email_footer a {
+    color: #fff;
+    text-decoration-line: underline;
+}
+
+.email_footer a:hover {
+    color: #b64036;
+    text-decoration-line: underline;
+}
+
+.foot_address {
+    line-height: 0.75rem;
+    text-decoration: none;
+}
+
+.lfooter {
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    display: flex;
+}
+
+.rfooter {
+
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: right;
+    justify-content: center;
+    display: flex;
+    line-height: 27px;
+}
+
+.rfooter a {
+    color: #fff;
+}
+
+.rfooter a:hover {
+    color: #b64036;
+}
+
+.smicon {
+    margin-right: 3px;
+}
+
+.fab {
+    margin-right: 12px;
+}
+
+/* Media queries */
+
+@media only screen and (min-width: 600px) {
+
+
+.site_header {
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+    
+.aloha-logo {
+    flex: 0 1 25%;
+    order: 1;
+}
+
+.navmenu {
+    flex: 0 1 50%;
+    order: 2;
+}
+
+.navlist {
+    border: none;
+}
+
+.cart-icon {
+    flex: 0 1 25%;
+    order: 3;
+}
+
+    .carousel-cell {
+        width: 50%;
+    }
+
+    .subscription-text {
+        width: 495px;
+    }
+    .categories-mosaic li {
+        height: 300px;
+    }
+    .categories-mosaic li{
+        border: 3px solid white;
+    }
+
+    .mens {
+        flex-basis: 100%;
+       
+       
+    }
+
+    .trends {
+        flex-basis: 50%;
+        border-bottom: 8px solid white;
+        border-right: 8px solid white;
+    }
+
+    .glasses {
+        flex-basis: 50%;
+        border-bottom: 8px solid white;
+    }
+
+    .sale {
+        flex-basis: 50%;
+        border-right: 8px solid white;
+    }
+
+    .bags {
+        flex-basis: 50%;
+        border-right: 8px solid white;
+    }
+
+    .womens {
+        flex-basis: 100%;
+    }
+
+    
+    body {
+        font-size: 16px;
+        font-family: 'Raleway', Arial, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        color: #2d2d2d;
+        line-height: 1.5rem;
+        text-align: center;
+    }
+    
+    p {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+        font-family: 'Playfair Display', Arial, sans-serif;
+    }
+    
+    h1,
+    h2,
+    h3 {
+        margin: 1rem 0;
+        font-family: 'Playfair Display', Arial, sans-serif;
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    h2 {
+        font-size: 2rem;
+        font-weight: normal;
+        font-style: italic;
+    }
+    
+    h2 span {
+        font-weight: bold;
+        font-style: normal
+    }
+    
+    .dc {
+        color: #e2574c;
+        font-size: 1.5rem;
+        margin: 16px;
+    }
+    
+    .price {
+        color: #969696;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    
+    .type {
+        color: #969696;
+        text-transform: uppercase;
+        font-size: 0.80rem;
+    }
+    
+    .footad {
+        color: #969696;
+    }
+
+}
+
+@media only screen and (min-width: 1240px) {
+
+    .site_header {
+        justify-content: space-between;
+    }
+
+    .aloha-logo {
+        text-align: right;
+    }
+
+    .cart-icon {
+        text-align: left;
+    }
+
+
+    .categories-mosaic li {
+        height: 300px;
+    }
+
+    .mens {
+        flex-basis: 50%;
+        border-bottom: 8px solid white;
+        border-right: 8px solid white;
+    }
+
+    .trends {
+        flex-basis: 25%;
+        border-bottom: 8px solid white;
+        border-right: 8px solid white;
+    }
+
+    .glasses {
+        flex-basis: 25%;
+        border-bottom: 8px solid white;
+    }
+
+    .sale {
+        flex-basis: 25%;
+        border-right: 8px solid white;
+    }
+
+    .bags {
+        flex-basis: 25%;
+        border-right: 8px solid white;
+    }
+
+    .womens {
+        flex-basis: 50%;
+    }
+
+
+    .carousel-cell {
+        width: 25%;
+    }
+
+}
