@@ -176,13 +176,16 @@ h3 {
     font-style: normal;
 }
 
-h2 {
+h1 {
     font-size: 2rem;
     font-weight: normal;
+}
+
+.hc {
     font-style: italic;
 }
 
-h2 span {
+h1 span {
     font-weight: bold;
     font-style: normal
 }
@@ -377,6 +380,8 @@ h2 span {
     border: none;
     font-family: 'Raleway', Arial, sans-serif;
 }
+
+
 
 /*This is the footer  part of the site*/
 
@@ -653,3 +658,32 @@ h2 span {
     }
 
 }
+
+/* Screen Reader*/  
+
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    font-family: 'Raleway', Arial, sans-serif
+ }
+
+ .screen-reader-text:focus {
+    clip: auto !important;
+    display: block;
+    height: auto;
+    left: 5px;
+    top: 5px;
+    width: auto;
+    z-index: 100000; /* above all content */
+ }
+
+ #shop[tabindex="-1"]:focus {
+    outline: 0;
+ }
+
+ .screen-reader-text {
+
+ }
