@@ -18,6 +18,7 @@ html {
 
 header {
     font-family: Helvetica, sans-serif;
+    
 }
 
 a:link {
@@ -49,11 +50,20 @@ a:visited {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    background-color: hsla(0,0%,100%,.85);
+    position: fixed;
+    transition: top .5s linear;
+    width: 100%;
+    z-index: 1;
+    margin-top: -120px;
 }
+
+
 
 .site_header img {
     height: 60px;
-    padding: 0.4rem 0;
+    padding: 0.4rem 10px;
+    
 }
 
 .aloha-logo {
@@ -71,7 +81,6 @@ a:visited {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 1rem;
     border-top: 1px solid #d7d7d7;
 }
 
@@ -91,22 +100,27 @@ a:visited {
 /* Banner Girl and Banner Background */
 
 .banner {
-    height: 450px;
     width: auto;
     background: linear-gradient(180deg, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url(images/banner-girl.png) no-repeat center 45px, url(images/flower-bkgd.jpg)repeat-x top;
-    background-size: cover, contain;
+    background-size: cover,150px 369px,cover;
+    height: 400px;
     position: relative;
-    margin-top: 0.25rem;
+    margin-top: 0;
     margin-bottom: 55px;
+    margin-top: 120px;
 }
 
 .banner-text {
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
-    align-items: center;
-    padding: 11rem;
-    line-height: 3rem;
+    color: #fff;
+    font-weight: 700;
+    left: 50%;
+    line-height: 1;
+    position: absolute;
+    text-align: center;
+    text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
     font-family: "Raleway";
 }
 
@@ -330,6 +344,7 @@ h1 span {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 8px;
 }
 
 .subscription-text {
@@ -471,12 +486,26 @@ h1 span {
 
 @media only screen and (min-width: 600px) {
 
+.navlist{
+    padding-top: 0.5rem;
+}
+
+.banner{
+    background-size: cover,150px 369px,cover;
+    height: 400px;
+    margin-top: 0;
+}
 
 .site_header {
     justify-content: space-evenly;
     flex-wrap: nowrap;
+    margin-top: 0;
 }
-    
+
+.site_header img {
+    max-width: 160px;
+}
+
 .aloha-logo {
     flex: 0 1 25%;
     order: 1;
@@ -604,8 +633,22 @@ h1 span {
 
 @media only screen and (min-width: 1240px) {
 
+    
+    .banner {
+        background: linear-gradient(180deg, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url(images/banner-girl.png) no-repeat center 60px, url(images/flower-bkgd.jpg)repeat-x top;
+        background-size: cover,250px 615px,contain;
+        height: 550px;
+        margin-top: 0;
+    }
+    
     .site_header {
         justify-content: space-between;
+        margin-top: 0;
+    }
+
+    .site_header img {
+        max-width: 160px;
+        padding: 0.4rem 0;
     }
 
     .aloha-logo {
@@ -616,6 +659,10 @@ h1 span {
         text-align: left;
     }
 
+    .cart-icon img {
+        width: 62px;
+    }
+    
 
     .categories-mosaic li {
         height: 300px;
@@ -656,7 +703,10 @@ h1 span {
     .carousel-cell {
         width: 25%;
     }
-
+    
+    .navlist {
+        width: 900px;
+    }
 }
 
 /* Screen Reader*/  
@@ -684,6 +734,3 @@ h1 span {
     outline: 0;
  }
 
- .screen-reader-text {
-
- }
