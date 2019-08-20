@@ -22,18 +22,18 @@ header {
 }
 
 a:link {
-    color: #e2574c;
+    color: #767676;
     text-decoration: none;
 }
 
 
 a:hover {
-    color: #b64036;
+    color: #767676;
     text-decoration: none;
 }
 
 a:visited {
-    color: #e2574c;
+    color: #db3a26;
     text-decoration: none;
 }
 
@@ -205,25 +205,25 @@ h1 span {
 }
 
 .dc {
-    color: #e2574c;
+    color: #db3a26;
     font-size: 1.5rem;
     margin: 16px;
 }
 
 .price {
-    color: #969696;
+    color: #000;
     font-size: 1rem;
     font-weight: 500;
 }
 
 .type {
-    color: #969696;
+    color: #000;
     text-transform: uppercase;
     font-size: 0.80rem;
 }
 
 .footad {
-    color: #969696;
+    color: #fff;
 }
 
 /* Aloha Apparel - mosaic categories display  */
@@ -382,7 +382,7 @@ h1 span {
 }
 
 .submit {
-    background-color: #e2574c;
+    background-color: #db3a26;
     height: 30px;
     color: #fff;
     font-weight: 700;
@@ -439,7 +439,7 @@ h1 span {
 }
 
 .email_footer a:hover {
-    color: #b64036;
+    color: #232323;
     text-decoration-line: underline;
 }
 
@@ -471,7 +471,7 @@ h1 span {
 }
 
 .rfooter a:hover {
-    color: #b64036;
+    color: #fff;
 }
 
 .smicon {
@@ -608,25 +608,25 @@ h1 span {
     }
     
     .dc {
-        color: #e2574c;
+        color: #db3a26;
         font-size: 1.5rem;
         margin: 16px;
     }
     
     .price {
-        color: #969696;
+        color: #000;
         font-size: 1rem;
         font-weight: 500;
     }
     
     .type {
-        color: #969696;
+        color: #000;
         text-transform: uppercase;
         font-size: 0.80rem;
     }
     
     .footad {
-        color: #969696;
+        color: #fff;
     }
 
 }
@@ -711,13 +711,16 @@ h1 span {
 
 /* Screen Reader*/  
 
-.screen-reader-text {
+ #shop[tabindex="-1"]:focus {
+    outline: 0;
+ }
+
+ .screen-reader-text {
     clip: rect(1px, 1px, 1px, 1px);
-    position: absolute !important;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-    font-family: 'Raleway', Arial, sans-serif
+   position: absolute !important;
+   height: 1px;
+   width: 1px;
+   overflow: hidden;
  }
 
  .screen-reader-text:focus {
@@ -727,6 +730,7 @@ h1 span {
     left: 5px;
     top: 5px;
     width: auto;
+<<<<<<< HEAD
     z-index: 100000; /* above all content */
  }
 
@@ -734,3 +738,7 @@ h1 span {
     outline: 0;
  }
 
+=======
+    z-index: 0; /* above all content */
+ }
+>>>>>>> 2887115b95496f14c466622a06f21e4f5427f4dc
