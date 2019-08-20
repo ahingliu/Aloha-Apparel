@@ -22,13 +22,13 @@ header {
 }
 
 a:link {
-    color: #767676;
+    color: #e2574c;
     text-decoration: none;
 }
 
 
 a:hover {
-    color: #767676;
+    color: #b64036;
     text-decoration: none;
 }
 
@@ -260,6 +260,10 @@ h1 span {
     border: 1px solid white;
 }
 
+.categories-mosaic li span a:hover {
+    color: #f5ebc6;
+}
+
 /* Aloha Apparel - Merchandise carousel section */
 
 .merchandise-name {
@@ -439,7 +443,7 @@ h1 span {
 }
 
 .email_footer a:hover {
-    color: #232323;
+    color: #e2574c;
     text-decoration-line: underline;
 }
 
@@ -463,15 +467,18 @@ h1 span {
     text-align: right;
     justify-content: center;
     display: flex;
-    line-height: 27px;
 }
 
 .rfooter a {
     color: #fff;
 }
 
+.rfooter h3{
+    margin: 3px;
+}
+
 .rfooter a:hover {
-    color: #fff;
+    color: #e2574c;
 }
 
 .smicon {
