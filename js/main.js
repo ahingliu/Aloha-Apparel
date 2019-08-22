@@ -1,12 +1,12 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   // all of your JS code goes here
   // const about = document.getElementById('about');
   // const shop = document.getElementById('categories');
   // const featured = document.getElementById('merchandise');
   // const update = document.getElementById('subscription');
   const navlist = document.querySelectorAll('.navlist li a');
-  navlist.forEach(function(element) {
-    element.addEventListener('click', function(event) {
+  navlist.forEach(function (element) {
+    element.addEventListener('click', function (event) {
       // Stop the default behavior on the button click
       event.preventDefault();
       console.log(event);
@@ -19,8 +19,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
-$(function() {
-  $("a[href^='#']").not("a[href='#']").click(function() {
-     $("#"+$(this).attr("href").slice(1)+"").focus();
-  });
-});
+

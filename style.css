@@ -95,6 +95,29 @@ a:visited {
     order: 2;
 }
 
+/* Screen Reader*/  
+
+#shop[tabindex="-1"]:focus {
+    outline: 0;
+ }
+
+ .screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute;
+    font-size: 0.9rem;
+    margin: auto 0;
+    margin-top: 19rem;
+    overflow: hidden;
+    background: hsla(0,0%,100%,.85);
+    padding: 5px;
+    border-radius: 5px;
+ }
+
+ .screen-reader-text:focus {
+    clip: auto !important;
+    display: block;
+    height: auto;
+ }
 
 
 /* Banner Girl and Banner Background */
@@ -121,7 +144,7 @@ a:visited {
     top: 50%;
     transform: translate(-50%,-50%);
     width: 80%;
-    font-family: "Raleway";
+    font-family: 'Raleway';
 }
 
 .first-line {
@@ -139,6 +162,7 @@ a:visited {
     font-weight: 500;
     color: #fff;
     text-shadow: 3px 1px 2px #13131333;
+    font-family: 'Playfair Display';
 }
 
 /* About Section */
@@ -178,7 +202,7 @@ body {
 p {
     font-size: 1rem;
     margin: 0.5rem 0;
-    font-family: 'Playfair Display', Arial, sans-serif;
+    font-family: 'Raleway', Arial, sans-serif;
 }
 
 h1,
@@ -355,8 +379,19 @@ h1 span {
     width: 495px;
 }
 
+.subscription-text p {
+    text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
+    width: 507px;
+}
+
 .subscription-heading {
     padding: 1.8rem 0;
+}
+
+.subscription-text h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    font-style: italic;
 }
 
 .email {
@@ -398,6 +433,7 @@ h1 span {
     width: 115px;
     border: none;
     font-family: 'Raleway', Arial, sans-serif;
+    cursor: pointer;
 }
 
 
@@ -493,6 +529,10 @@ h1 span {
 
 @media only screen and (min-width: 600px) {
 
+.screen-reader-text {
+    margin-top: 10rem;
+}
+
 .navlist{
     padding-top: 0.5rem;
 }
@@ -538,6 +578,10 @@ h1 span {
 
     .subscription-text {
         width: 495px;
+    }
+
+    .subscription-text p{
+        width: 507px;
     }
     .categories-mosaic li {
         height: 300px;
@@ -588,12 +632,6 @@ h1 span {
         text-align: center;
     }
     
-    p {
-        font-size: 1rem;
-        margin: 0.5rem 0;
-        font-family: 'Playfair Display', Arial, sans-serif;
-    }
-    
     h1,
     h2,
     h3 {
@@ -640,7 +678,10 @@ h1 span {
 
 @media only screen and (min-width: 1240px) {
 
-    
+    .screen-reader-text {
+        margin-left: 2rem;
+     }
+
     .banner {
         background: linear-gradient(180deg, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url(images/banner-girl.png) no-repeat center 60px, url(images/flower-bkgd.jpg)repeat-x top;
         background-size: cover,250px 615px,contain;
@@ -714,38 +755,9 @@ h1 span {
     .navlist {
         width: 900px;
     }
+
+    .subscription-text p{
+        width: 507px;
+    }
 }
 
-/* Screen Reader*/  
-
- #shop[tabindex="-1"]:focus {
-    outline: 0;
- }
-
- .screen-reader-text {
-    clip: rect(1px, 1px, 1px, 1px);
-   position: absolute !important;
-   height: 1px;
-   width: 1px;
-   overflow: hidden;
- }
-
- .screen-reader-text:focus {
-    clip: auto !important;
-    display: block;
-    height: auto;
-    left: 5px;
-    top: 5px;
-    width: auto;
-<<<<<<< HEAD
-    z-index: 100000; /* above all content */
- }
-
- #shop[tabindex="-1"]:focus {
-    outline: 0;
- }
-
-=======
-    z-index: 0; /* above all content */
- }
->>>>>>> 2887115b95496f14c466622a06f21e4f5427f4dc
